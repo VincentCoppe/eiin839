@@ -1,0 +1,6 @@
+D:\SI4_TD\SOC\eiin839\TD2\MyMethod\bin\Debug\MyMethod.exe.config
+D:\SI4_TD\SOC\eiin839\TD2\MyMethod\bin\Debug\MyMethod.exe
+D:\SI4_TD\SOC\eiin839\TD2\MyMethod\bin\Debug\MyMethod.pdb
+D:\SI4_TD\SOC\eiin839\TD2\MyMethod\obj\Debug\MyMethod.csproj.CoreCompileInputs.cache
+D:\SI4_TD\SOC\eiin839\TD2\MyMethod\obj\Debug\MyMethod.exe
+D:\SI4_TD\SOC\eiin839\TD2\MyMethod\obj\Debug\MyMethod.pdb

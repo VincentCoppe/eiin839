@@ -1,14 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
+using System.Reflection;
+using System.Security.Policy;
 using System.Text;
 using System.Web;
+
 
 namespace BasicServerHTTPlistener
 {
     internal class Program
     {
+      
+
+
+       
+
+        
+        
         private static void Main(string[] args)
         {
 
@@ -26,6 +36,7 @@ namespace BasicServerHTTPlistener
             // Add the prefixes.
             if (args.Length != 0)
             {
+               
                 foreach (string s in args)
                 {
                     listener.Prefixes.Add(s);
@@ -56,6 +67,7 @@ namespace BasicServerHTTPlistener
                 Environment.Exit(0);
             };
 
+            
 
             while (true)
             {
@@ -109,7 +121,18 @@ namespace BasicServerHTTPlistener
                 HttpListenerResponse response = context.Response;
 
                 // Construct a response.
-                string responseString = "<HTML><BODY> Hello world!</BODY></HTML>";
+                string responseString = "";
+                if (request.Url.Segments[request.Url.Segments.Length - 1].Equals("MyMethod"))
+                {
+                    Type type = typeof(MyMethodExe);
+                    MethodInfo method = type.GetMethod(request.Url.Segments[request.Url.Segments.Length - 1]);
+                    MyMethodExe c = new MyMethodExe();
+                    //execute the method "MyMethod" with the 2 parameters given in the url
+                    responseString = (string)method.Invoke(c, new[] { HttpUtility.ParseQueryString(request.Url.Query).Get("param1"), HttpUtility.ParseQueryString(request.Url.Query).Get("param2") });
+
+                }
+                else
+                    responseString = "<HTML><BODY> Hello world!</BODY></HTML>";
                 byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
                 // Get a response stream and write the response to it.
                 response.ContentLength64 = buffer.Length;
@@ -121,5 +144,7 @@ namespace BasicServerHTTPlistener
             // Httplistener neither stop ... But Ctrl-C do that ...
             // listener.Stop();
         }
+
+
     }
 }

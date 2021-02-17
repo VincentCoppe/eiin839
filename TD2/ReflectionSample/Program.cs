@@ -12,7 +12,7 @@ class Program
         Type type = typeof(MyReflectionClass);
         MethodInfo method = type.GetMethod("MyMethod");
         MyReflectionClass c = new MyReflectionClass();
-        string result = (string) method.Invoke(c, null);
+        string result = (string) method.Invoke(c, new[] { "test" ,"ddd"});
         Console.WriteLine(result);
         Console.ReadLine();
 
@@ -21,7 +21,7 @@ class Program
 
 public class MyReflectionClass
 {
-    public string MyMethod()
+    public string MyMethod(string param,string param2)
     {
         Console.WriteLine("Call MyMethod 1");
         return "Call MyMethod 2";

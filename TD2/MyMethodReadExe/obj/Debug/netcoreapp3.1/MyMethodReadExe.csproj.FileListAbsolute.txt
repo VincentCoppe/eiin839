@@ -1,0 +1,13 @@
+D:\SI4_TD\SOC\eiin839\TD2\MyMethodReadExe\obj\Debug\netcoreapp3.1\MyMethodReadExe.csprojAssemblyReference.cache
+D:\SI4_TD\SOC\eiin839\TD2\MyMethodReadExe\obj\Debug\netcoreapp3.1\MyMethodReadExe.csproj.CoreCompileInputs.cache
+D:\SI4_TD\SOC\eiin839\TD2\MyMethodReadExe\obj\Debug\netcoreapp3.1\MyMethodReadExe.AssemblyInfoInputs.cache
+D:\SI4_TD\SOC\eiin839\TD2\MyMethodReadExe\obj\Debug\netcoreapp3.1\MyMethodReadExe.AssemblyInfo.cs
+D:\SI4_TD\SOC\eiin839\TD2\MyMethodReadExe\bin\Debug\netcoreapp3.1\MyMethodReadExe.exe
+D:\SI4_TD\SOC\eiin839\TD2\MyMethodReadExe\bin\Debug\netcoreapp3.1\MyMethodReadExe.deps.json
+D:\SI4_TD\SOC\eiin839\TD2\MyMethodReadExe\bin\Debug\netcoreapp3.1\MyMethodReadExe.runtimeconfig.json
+D:\SI4_TD\SOC\eiin839\TD2\MyMethodReadExe\bin\Debug\netcoreapp3.1\MyMethodReadExe.runtimeconfig.dev.json
+D:\SI4_TD\SOC\eiin839\TD2\MyMethodReadExe\bin\Debug\netcoreapp3.1\MyMethodReadExe.dll
+D:\SI4_TD\SOC\eiin839\TD2\MyMethodReadExe\bin\Debug\netcoreapp3.1\MyMethodReadExe.pdb
+D:\SI4_TD\SOC\eiin839\TD2\MyMethodReadExe\obj\Debug\netcoreapp3.1\MyMethodReadExe.dll
+D:\SI4_TD\SOC\eiin839\TD2\MyMethodReadExe\obj\Debug\netcoreapp3.1\MyMethodReadExe.pdb
+D:\SI4_TD\SOC\eiin839\TD2\MyMethodReadExe\obj\Debug\netcoreapp3.1\MyMethodReadExe.genruntimeconfig.cache
